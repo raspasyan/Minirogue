@@ -1,0 +1,240 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline;}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {display: block;}
+body {line-height: 1;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,
+q:before, q:after {content: ''; content: none;}
+table {border-collapse: collapse; border-spacing: 0;}
+strong {font-weight: bold;}
+a {color: inherit; text-decoration: none;}
+a:visited {color: inherit;}
+p {margin-bottom: 20px;}
+*, *:before, *:after { -webkit-box-sizing: border-box; /* Нужно для мобильного WebKit */ -moz-box-sizing: border-box; /* Нужно для Firefox */ box-sizing: border-box; }
+.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+/* Уникальный стиль */
+h1 { color: goldenrod; font-size: 2.0rem; font-weight: bold; text-align: center;}
+h2 { color: #FFF; font-size: 1.4rem; font-weight: bold; margin: 6px 0;}
+h3 { color: #d0b462;; font-size: 1.2rem; font-weight: bold;}
+
+* {
+	transition: all 400ms;
+}
+body {
+	box-sizing: border-box;
+	font-family: monospace;
+	font-size: 14px;
+	background: url("http://pre03.deviantart.net/4c08/th/pre/i/2013/247/0/9/fantasy_bg_6h__2__by_moonglowlilly-d6kzo8h.jpg") center center no-repeat;
+	background-color: black;
+	line-height: 1.5;
+}
+.game-cont {
+    position: relative;
+	padding: 8px;
+	margin: 8px;
+	color: rgb(243, 243, 243);
+	text-shadow: 0 1px 0 rgba(0,0,0,.8);
+	background-color: rgba(0,0,0,.8);
+	border-radius: 8px;
+	border: 1px solid darkgoldenrod;
+}
+
+a {
+	font-weight: bold;
+	text-decoration: none;
+	color: lightskyblue;
+}
+a:visited {
+	color: lightskyblue;
+}
+li {
+    font-weight: bold;
+}
+li:before {
+	color: lightskyblue;
+	content: "\203A";
+	padding-right: 4px;
+}
+li:hover:before {
+	color: gold;
+}
+li:hover a {
+	color: gold;
+}
+
+.icon {
+	box-sizing: border-box;
+	position: relative;
+	display: inline-block;
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+	border: 2px solid rgb(188, 161, 110);
+	margin: 2px;
+	vertical-align: middle;
+	background-color: rgb(67, 53, 53);
+	background: url("../assets/icons/gui.png") -58px -95px;
+}
+.tip {
+	position: absolute;
+	display: none;
+	left: 100%;
+	padding: 4px;
+	font-weight: normal;
+	color: rgb(243, 243, 243);
+	background-color: rgba(0,0,0,.9);
+	border-radius: 4px;
+	border: 1px solid rgb(188, 161, 110);
+	white-space: pre-wrap;
+	z-index: 1;
+}
+.active > .tip {
+	display: block;
+}
+li:hover > a > .icon {
+	border: 2px solid goldenrod;
+}
+.icon:hover {
+	border: 2px solid goldenrod;
+}
+.icon-qlt-low {border-color: greenyellow}
+.icon-qlt-mid {border-color: deepskyblue}
+.icon-qlt-high {border-color: mediumpurple}
+.icon-hp {background: url("../assets/icons/gui.png") -231px -54px;}
+.icon-lvl {background: url("../assets/icons/gui.png") -188px -311px;}
+.icon-exp {background: url("../assets/icons/gui.png") -14px -226px;}
+.icon-item-lvl {background: url("../assets/icons/gui.png") -361px -182px;}
+.icon-donation {background: url("../assets/icons/gui.png") -102px -54px;}
+.icon-quest {background: url("../assets/icons/gui.png") -497px -18px;}
+.icon-quest2 {background: url("../assets/icons/gui.png") -319px -312px;}
+.icon-database {background: url("../assets/icons/gui.png") -145px -311px;}
+.icon-weapons {background: url("../assets/icons/gui.png") -280px -19px;}
+.icon-armors {background: url("../assets/icons/gui.png") -236px -19px;}
+.icon-money {background: url("../assets/icons/gui.png") -19px -19px;}
+.icon-supply {background: url("../assets/icons/gui.png") -318px -97px;}
+.icon-magic {background: url("../assets/icons/gui.png") -406px -53px;}
+.icon-wood {background: url("../assets/icons/resources.png") -215px -359px;}
+.icon-metal {background: url("../assets/icons/resources.png") -312px -262px;}
+.icon-cloth {background: url("../assets/icons/resources.png") -64px -213px}
+.icon-herbs {background: url("../assets/icons/resources.png") -13px -312px;}
+.icon-leather {background: url("../assets/icons/resources.png") -262px -211px;}
+.icon-transport {background: url("../assets/icons/locations.png") -376px -192px;}
+.icon-death {background: url("../assets/icons/gui.png") -453px -16px;}
+.icon-death:hover {border-color: maroon;}
+
+.icon-money1 {background: url("../assets/icons/resources.png") -509px -212px;}
+.icon-money2 {background: url("../assets/icons/resources.png") -510px -12px;}
+.icon-money3 {background: url("../assets/icons/sci-fi.png") -261px -112px;}
+.icon-weapon01 {background: url("../assets/icons/weapons.png") -114px -63px;}
+.icon-weapon02 {background: url("../assets/icons/weapons.png") -559px -260px;}
+.icon-weapon20 {background: url("../assets/icons/weapons.png") -114px -13px;}
+.icon-weapon30 {background: url("../assets/icons/weapons.png") -63px -310px;}
+.icon-weapon40 {background: url("../assets/icons/sci-fi.png") -15px -260px;}
+.icon-armor01 {background: url("../assets/icons/armors.png") -405px -47px;}
+.icon-armor02 {background: url("../assets/icons/armors.png") -166px -46px;}
+.icon-armor03 {background: url("../assets/icons/armors.png") -126px -46px;}
+.icon-armor04 {background: url("../assets/icons/sci-fi.png") -14px -211px;}
+.icon-supply01 {background: url("../assets/icons/food.png") -212px -260px;}
+.icon-supply02 {background: url("../assets/icons/resources.png") -559px -361px;}
+.icon-supply03 {background: url("../assets/icons/resources.png") -163px -161px;}
+.icon-supply04 {background: url("../assets/icons/sci-fi.png") -411px -112px;}
+.icon-wood1 {background: url("../assets/icons/resources.png") -15px -360px;}
+.icon-wood2 {background: url("../assets/icons/resources.png") -163px -360px;}
+.icon-wood3 {background: url("../assets/icons/resources.png") -64px -360px;}
+.icon-wood4 {background: url("../assets/icons/resources.png") -113px -360px;}
+.icon-metal1 {background: url("../assets/icons/resources.png") -461px -112px;}
+.icon-metal2 {background: url("../assets/icons/resources.png") -560px -161px;}
+.icon-metal3 {background: url("../assets/icons/resources.png") -510px -112px;}
+.icon-metal4 {background: url("../assets/icons/resources.png") -461px -162px;}
+.icon-magic2 {background: url("../assets/icons/gui.png") -151px -244px;}
+.icon-cell {background: url("../assets/icons/sci-fi.png") -112px -160px;}
+.icon-cell2 {background: url("../assets/icons/sci-fi.png") -560px -62px;}
+.icon-herbs1 {background: url("../assets/icons/resources.png") -113px -310px;}
+
+.icon-talk {background: url("../assets/icons/locations.png") -173px -314px;}
+.icon-transport3 {background: url("../assets/icons/locations.png") -10px -233px;}
+.icon-transport4 {background: url("../assets/icons/sci-fi.png") -312px -12px;}
+.icon-loot {background: url("../assets/icons/locations.png") -457px -233px;}
+.icon-strength {background: url("../assets/icons/locations.png") -92px -233px;}
+.icon-planning {background: url("../assets/icons/locations.png") -52px -152px;}
+.icon-craft {background: url("../assets/icons/locations.png") -417px -112px}
+.icon-skull {background: url("../assets/icons/locations.png") -254px -112px}
+.icon-hunt {background: url("../assets/icons/locations.png") -132px -112px}
+.icon-ruins {background: url("../assets/icons/locations.png") -214px -151px}
+.icon-village {background: url("../assets/icons/locations.png") -10px -30px}
+.icon-troll {background: url("../assets/icons/mobs.png") -457px -42px;}
+.icon-rest {background: url("../assets/icons/locations.png") -174px -152px;}
+.icon-avatar1 {background: url("../assets/icons/locations.png") -416px -274px;}
+.icon-buy-weapon {background: url("../assets/icons/locations.png") -92px -112px;}
+.icon-buy-armor {background: url("../assets/icons/locations.png") -214px -112px;}
+.icon-buy-supply {background: url("../assets/icons/locations.png") -457px -112px;}
+.icon-bandit {background: url("../assets/icons/locations.png") -92px -233px;}
+.icon-gamble {background: url("../assets/icons/locations.png") -335px -273px;}
+.icon-small-town {background: url("../assets/icons/locations.png") -11px -111px;}
+.icon-forest {background: url("../assets/icons/locations.png") -173px -70px;}
+.icon-trade {background: url("../assets/icons/locations.png") -88px -490px;}
+.icon-tavern {background: url("../assets/icons/locations.png") -294px -313px;}
+.icon-alchemy {background: url("../assets/icons/locations.png") -214px -314px;}
+.icon-shop {background: url("../assets/icons/locations.png") -254px -233px;}
+
+
+.lbl {
+	vertical-align: middle;
+	color: rgb(241, 214, 176);
+	background-color: rgb(67, 53, 53);
+	border-radius: 4px;
+	border: 2px solid rgb(188, 161, 110);
+	font-weight: bold;
+	padding: 1px 3px;
+	margin-top: 6px;
+	white-space: nowrap;
+	text-shadow: 0 1px 0 black;
+	box-shadow: inset 0 1px 0 black;
+}
+a:hover > .lbl, .lbl:hover {
+	cursor: pointer;
+	background-color: rgb(90, 46, 46);
+}
+.lbl-col-good {color: greenyellow}
+.lbl-col-warning {color: gold}
+.lbl-col-bad {color: red}
+.lbl-col-danger {color: mediumpurple}
+
+hr {
+	margin: 16px 0 8px 0;
+	border-left: 64px solid transparent;
+	border-bottom: 1px solid rgb(188, 161, 110);
+	border-right: 64px solid transparent;
+}
+iframe {
+	display: none;
+}
+.donation {
+	text-align: center;
+}
+.donation.show > iframe {
+	display: inline-block;
+}
+
+@media only screen and (min-width: 640px) {
+	.game-cont {
+		margin: 8px auto;
+		width: 640px;
+	}
+}
